@@ -1,0 +1,29 @@
+//This project will convert our age in human years to dog years.
+
+//We'll create a variable to hold our age. This will be updated later.
+let myAge = 29;
+
+//Thi variable will hold the early year conversion.
+let earlyYears = 2;
+
+//As a dog's first two years is 10.5 each, we'll multiply our above variable and assign the new value.
+earlyYears *= 10.5;
+
+//As we have now accounted for the first two years, we update our age accordingly, saving the result in a new variable.
+let laterYears = myAge - 2;
+
+//The remaining years are multiplied by 4.
+laterYears *= 4;
+
+//We'll quickly print our earlyYears and laterYears to //ensure that our variables have the expected values.
+console.log(earlyYears);
+console.log(laterYears);
+
+//Having calculated each, we'll add in our years.
+const myAgeInDogYears = earlyYears + laterYears;
+
+//Store our name.
+const myName = "Charles".toLowerCase();
+
+//Now we'll display our name and age.
+console.log(`My name is ${myName}. I am ${myAge} years old in human years, which makes me ${myAgeInDogYears} years old in dog years.`);
